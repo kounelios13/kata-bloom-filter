@@ -1,0 +1,35 @@
+### Node ###
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+report
+.lock-wscript
+build/Release
+node_modules
+build
+
+### SublimeText ###
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### IDE ###
+.idea
+
+### Other ###
+.tern-project

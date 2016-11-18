@@ -1,0 +1,33 @@
+{
+  "name": "node-skeleton-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nodes skeleton project",
+  "author": "Nikolas Vourlakis <nikolas@imgzine.com>",
+  "main": "index.js",
+  "files": [
+    "bin/",
+    "config/",
+    "lib/"
+  ],
+  "scripts": {
+    "check": "dependency-check package.json --missing --no-dev --entry index.js",
+    "test": "NODE_ENV=testing node test/index.js | faucet",
+    "coverage": "istanbul cover -- test"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "dependency-check": "2.5.1",
+    "faucet": "0.0.1",
+    "istanbul": "^0.4.5",
+    "require-all": "^2.0.0",
+    "tape": "^4.6.2"
+  }
+}
